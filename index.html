@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/2e9bf3b794.js"></script>
 
 
     <title>Soft Landing | We help you manage your website successfully</title>
@@ -29,9 +30,9 @@
                     <li class="navigation__item"><a href="#" class="navigation__link">Pricing</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
                 </ul>
-                <!-- <div class="navigation__social-icons">
-                    <i class="fab fa-facebook"></i>
-                </div> -->
+                <div class="navigation__hamburger">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
             </div>
         </div>
         <div class="header__text-box">
@@ -51,25 +52,64 @@
                 <div class="col-1-of-2">
                     <h2 class="heading-secondary">What you get</h2>
                     <div class="features-tags">
-                        <a class="features-tags__link" href="#">Responsive</a>
-                        <a class="features-tags__link" href="#">Mobile</a>
-                        <a class="features-tags__link" href="#">Support</a>
+                        <a class="features-tags__link active" href="javascript:;" data-change="text-1">Responsive</a>
+                        <a class="features-tags__link" href="javascript:;" data-change="text-2">Mobile</a>
+                        <a class="features-tags__link" href="javascript:;" data-change="text-3">Support</a>
                     </div>
-                    <h3 class="heading-tertiary">Minimal Design</h3>
-                    <p class="default-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quasi ratione impedit obcaecati,
-                        temporibus nam in et est molestias enim expedita ab facilis officiis voluptatem pariatur dolor
-                        soluta sapiente tempore omnis molestiae recusandae iste fugit reiciendis.
-                    </p>
-                    <h3 class="heading-tertiary">Easy to use</h3>
-                    <p class="default-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, exercitationem nihil a qui
-                        tempore ad totam voluptatem odio vitae dolorum.
-                    </p>
+                    <div class="features-tags__content active" id="text-1">
+                        <h3 class="heading-tertiary">Minimal Design</h3>
+                        <p class="default-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quasi ratione impedit
+                            obcaecati,
+                            temporibus nam in et est molestias enim expedita ab facilis officiis voluptatem pariatur
+                            dolor
+                            soluta sapiente tempore omnis molestiae recusandae iste fugit reiciendis.
+                        </p>
+                        <h3 class="heading-tertiary">Easy to use</h3>
+                        <p class="default-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, exercitationem nihil a
+                            qui
+                            tempore ad totam voluptatem odio vitae dolorum.
+                        </p>
+                    </div>
+                    <div class="features-tags__content" id="text-2">
+                        <h3 class="heading-tertiary">Compatible Browsers
+
+                        </h3>
+                        <p class="default-text">
+                            Nam maximus elit a metus luctus, a faucibus magna mattis. Ut malesuada viverra iaculis. Nunc
+                            euismod sit amet neque a tincidunt.
+                        </p>
+                        <h3 class="heading-tertiary">User Friendly</h3>
+                        <p class="default-text">
+                            Maecenas maximus velit lorem, quis pharetra turpis fringilla id. Vestibulum tempor facilisis
+                            efficitur. Sed nec nisi sit amet nibh pellentesque elementum.
+                        </p>
+                        <h3 class="heading-tertiary">HTML5 & CSS3</h3>
+                        <p class="default-text">
+                            In viverra ipsum ornare sapien rhoncus ullamcorper. Vivamus vitae risus ac mi vehicula
+                            sagittis. Nulla dictum magna sit amet pharetra aliquam.
+                        </p>
+                    </div>
+
+                    <div class="features-tags__content" id="text-3">
+                        <h3 class="heading-tertiary">Quick Support</h3>
+                        <p class="default-text">
+                            Mauris rutrum est at fringilla pulvinar. Nam ligula urna, lobortis non scelerisque vel,
+                            molestie eu massa. Nullam mattis elit at tortor accumsan.
+                        </p>
+                        <h3 class="heading-tertiary">Easy to use</h3>
+                        <p class="default-text">
+                            Quisque ullamcorper sem quis sapien cursus efficitur. Sed id sodales ipsum. Morbi eleifend
+                            tempus erat sit amet vehicula. Nulla at posuere tellus, non mattis erat. Nulla id massa
+                            gravida.
+                        </p>
+                    </div>
+
                 </div>
                 <div class="col-1-of-2">
                     <div class="features-image">
-                        <img src="img/laptop.png" alt="Picture of rotated laptop" class="features-image__png"> 
+                        <img src="img/laptop.png" alt="Picture of rotated laptop" class="features-image__png">
                     </div>
                 </div>
             </div>
@@ -151,8 +191,120 @@
                 </div>
             </div>
         </section>
+        <section class="section-pricing">
+            <div class="row">
+                <h2 class="heading-secondary u-center-text u-margin-bottom-large">Choose any plan</h2>
+                <div class="col-1-of-3 ">
+                    <div class="pricing-card u-border-right">
+                        <div class="pricing-card__text">
+                            <h3 class="heading-tertiary u-padding-bottom-medium">Student</h3>
+                            <div class="pricing-card__details u-padding-bottom-medium">
+                                <p>20 Responsive Designs</p>
+                                <p>10 Dashboards</p>
+                                <p>1 TB Storage</p>
+                                <p>6 TB Bandwidth</p>
+                                <p>24-hour Support</p>
+                            </div>
+                            <div class="pricing-card__price-button">
+                                <span>$200/mo</span>
+                                <a href="#" class="btn">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="pricing-card u-border-right">
+                        <div class="pricing-card__text">
+                            <h3 class="heading-tertiary u-padding-bottom-medium">Business</h3>
+                            <div class="pricing-card__details u-padding-bottom-medium">
+                                <p>50 Responsive Designs</p>
+                                <p>30 Dashboards</p>
+                                <p>2 TB Storage</p>
+                                <p>12 TB Bandwidth</p>
+                                <p>15-minute Support</p>
+                            </div>
+                            <div class="pricing-card__price-button">
+                                <span>$350/mo</span>
+                                <a href="#" class="btn">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="pricing-card">
+                        <div class="pricing-card__text">
+                            <h3 class="heading-tertiary u-padding-bottom-medium">Professional</h3>
+                            <div class="pricing-card__details u-padding-bottom-medium">
+                                <p>100 Responsive Designs</p>
+                                <p>60 Dashboards</p>
+                                <p>5 TB Storage</p>
+                                <p>25 TB Bandwidth</p>
+                                <p>1-minute Support</p>
+                            </div>
+                            <div class="pricing-card__price-button">
+                                <span>$550/mo</span>
+                                <a href="#" class="btn">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact">
+            <div class="row">
+                <h2 class="heading-secondary u-center-text u-margin-bottom-large">Say hello to us</h2>
+                <form action method="post" role="form" id="contact-form">
+                    <div class="col-1-of-3">
+                        <div class="contact-form">
+                            <div class="contact-form__type">
+                                <input type="text" name="name" placeholder="Full name" class="contact-form" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="contact-form">
+                            <div class="contact-form__type">
+                                <input type="email" name="email" placeholder="Email address" class="contact-form"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="contact-form">
+                            <div class="contact-form__submit">
+                                <input type="submit" name="send message" value="Send Message" class="contact-form">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <textarea name="name" id="contact-form" rows="10" placeholder="Your message"
+                            required></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="section-footer">
+            <div class="footer-info">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer-info__copyright">
+                            <p>Copyright © 2019 Soft Landing - Design: <a
+                                    href="https://www.tooplate.com/view/2106-soft-landing" target="_blank">Tooplate</a>
+                                </br>Website coded for learing purposes by: <a href="https://github.com/LukaszKrzywicki"
+                                    target="_blank">Łukasz Krzywicki</a></p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="footer_info__social-icons"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
