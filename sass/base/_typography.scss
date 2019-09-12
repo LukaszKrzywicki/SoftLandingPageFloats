@@ -5,8 +5,13 @@ body {
 
 .heading-primary {
     color: $color-white;
-    min-width: 80rem;
+    min-width: 70rem;
     margin-bottom: 6rem;
+
+    @include respond(mobile) {
+        margin-bottom: 15rem;
+        height: 30rem;
+    }
 
     &--small {
         display: block;
@@ -21,6 +26,10 @@ body {
         font-weight: 200;
         font-size: 7.5rem;
         text-align: center;
+
+        @include respond(mobile) {
+            font-size: 8rem;
+        }
     }
 }
 

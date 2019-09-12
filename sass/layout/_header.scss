@@ -1,17 +1,26 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(to right bottom,
-        rgba($color-primary, 0.8), rgba($color-primary-light, 0.8)),
+            rgba($color-primary, 0.8), rgba($color-primary-light, 0.8)),
         url(../img/header.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    z-index: 1;
+
 
     &__menu {
         height: 15rem;
         position: relative;
+        z-index: 3;
+
+        @include respond(mobile) {
+            background-color: $color-white;
+            height: 15rem;
+        }
     }
+
 
     &__logo-box {
         position: relative;
@@ -20,6 +29,11 @@
         width: 25%;
         font-size: 3rem;
         color: $color-white;
+
+        @include respond(mobile) {
+            width: 35%;
+            margin-left: 2rem;
+        }
     }
 
     &__logo-box span {
@@ -34,6 +48,11 @@
         &:visited {
             text-decoration: none;
             color: $color-white;
+
+            @include respond(mobile) {
+                color: $color-black;
+                font-size: 3.6rem;
+            }
         }
     }
 
@@ -100,4 +119,21 @@
             background-color: $color-black;
         }
     }
+}
+
+.sticky {
+    height: 10rem;
+    position: fixed;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 999;
+    transition: .2s;
+    -webkit-box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 3px 16px -4px rgba(0, 0, 0, 0.76);
+}
+
+.open {
+    background-color: $color-white;
+    height: 30rem;
 }
